@@ -1,8 +1,8 @@
-const { gql, request } = require("graphql-request");
+const { request, gql  } = require("graphql-request");
 
 const MASTER_URL = "https://api-ap-south-1.hygraph.com/v2/" + process.env.NEXT_PUBLIC_HYGRAPH_API_KEY + "/master";
 
-const getCourseList = async () => {
+const getAllCourseList = async () => {
     const query = gql`
         query MyQuery {
             courseLists {
