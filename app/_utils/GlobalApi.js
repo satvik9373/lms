@@ -34,5 +34,5 @@ const getAllCourseList = async () => {
 };
 
 export default {
-    getCourseList
+    getAllCourseList
 };
